@@ -3,3 +3,10 @@ build-*
 *.user.*
 custom.pri
 env.pri
+
+#нд╪Ч╪п
+.vs
+out
+.qtc_clangd
+debug
+release

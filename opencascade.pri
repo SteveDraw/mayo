@@ -5,8 +5,10 @@
 #****************************************************************************
 
 # Declare pure QMake variables out of OCC envvars
-isEmpty(CASCADE_INC_DIR):CASCADE_INC_DIR = $$(CSF_OCCTIncludePath)
-isEmpty(CASCADE_LIB_DIR):CASCADE_LIB_DIR = $$(CSF_OCCTLibPath)
+# isEmpty(CASCADE_INC_DIR):CASCADE_INC_DIR = $$(CSF_OCCTIncludePath)
+# isEmpty(CASCADE_LIB_DIR):CASCADE_LIB_DIR = $$(CSF_OCCTLibPath)
+isEmpty(CASCADE_INC_DIR):CASCADE_INC_DIR = E:\D-File\OpenCASCADE-7.5.0-vc14-64\opencascade-7.5.0\inc
+isEmpty(CASCADE_LIB_DIR):CASCADE_LIB_DIR = E:\D-File\OpenCASCADE-7.5.0-vc14-64\opencascade-7.5.0\win64\vc14\lib
 isEmpty(CASCADE_BIN_DIR):CASCADE_BIN_DIR = $$(CSF_OCCTBinPath)
 isEmpty(CASCADE_SRC_DIR):CASCADE_SRC_DIR = $$(CSF_OCCTResourcePath)
 equals(QT_ARCH, i386) {
