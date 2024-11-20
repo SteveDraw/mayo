@@ -25,8 +25,8 @@ CommandSaveViewImage::CommandSaveViewImage(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("Save View to Image"));
-    action->setToolTip(Command::tr("Save View to Image"));
+    action->setText(Command::tr("保存视图快照"));
+    action->setToolTip(Command::tr("保存视图快照"));
     action->setIcon(mayoTheme()->icon(Theme::Icon::Camera));
     this->setAction(action);
 }
@@ -86,8 +86,8 @@ CommandEditOptions::CommandEditOptions(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("Options"));
-    action->setToolTip(Command::tr("Options"));
+    action->setText(Command::tr("设置"));
+    action->setToolTip(Command::tr("设置"));
     this->setAction(action);
 }
 

@@ -220,7 +220,7 @@ CommandNewDocument::CommandNewDocument(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("New"));
+    action->setText(Command::tr("新项目工程"));
     action->setToolTip(Command::tr("New Document"));
     action->setShortcut(Qt::CTRL + Qt::Key_N);
     this->setAction(action);
@@ -238,7 +238,7 @@ CommandOpenDocuments::CommandOpenDocuments(IAppContext* context)
 {
     auto action = new QAction(this);
     action->setText(Command::tr("Open"));
-    action->setToolTip(Command::tr("Open Documents"));
+    action->setToolTip(Command::tr("打开项目工程"));
     action->setShortcut(Qt::CTRL + Qt::Key_O);
     this->setAction(action);
 
@@ -288,7 +288,7 @@ CommandRecentFiles::CommandRecentFiles(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("Recent files"));
+    action->setText(Command::tr("最近文件"));
     this->setAction(action);
 }
 

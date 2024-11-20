@@ -18,8 +18,8 @@ CommandMainWidgetToggleFullscreen::CommandMainWidgetToggleFullscreen(IAppContext
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("Fullscreen"));
-    action->setToolTip(Command::tr("Switch Fullscreen/Normal"));
+    action->setText(Command::tr("全屏显示"));
+    action->setToolTip(Command::tr("选择 全屏/正常状态"));
     action->setShortcut(Qt::Key_F11);
     action->setCheckable(true);
     action->setChecked(context->widgetMain()->isFullScreen());
@@ -45,7 +45,7 @@ CommandLeftSidebarWidgetToggle::CommandLeftSidebarWidgetToggle(IAppContext* cont
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setToolTip(Command::tr("Show/Hide Left Sidebar"));
+    action->setToolTip(Command::tr("显示/隐藏 左侧边栏"));
     action->setShortcut(Qt::ALT + Qt::Key_0);
     action->setCheckable(true);
     action->setChecked(context->pageDocuments_widgetLeftSideBar()->isVisible());
@@ -80,11 +80,11 @@ bool CommandLeftSidebarWidgetToggle::eventFilter(QObject* watched, QEvent* event
 void CommandLeftSidebarWidgetToggle::updateAction()
 {
     if (this->context()->pageDocuments_widgetLeftSideBar()->isVisible()) {
-        this->action()->setText(Command::tr("Hide Left Sidebar"));
+        this->action()->setText(Command::tr("隐藏左侧边栏"));
         this->action()->setIcon(mayoTheme()->icon(Theme::Icon::BackSquare));
     }
     else {
-        this->action()->setText(Command::tr("Show Left Sidebar"));
+        this->action()->setText(Command::tr("显示左侧边栏"));
         this->action()->setIcon(mayoTheme()->icon(Theme::Icon::LeftSidebar));
     }
 
@@ -95,7 +95,7 @@ CommandSwitchMainWidgetMode::CommandSwitchMainWidgetMode(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setToolTip(Command::tr("Go To Home Page"));
+    action->setToolTip(Command::tr("转到主页"));
     action->setShortcut(Qt::CTRL + Qt::Key_0);
     this->setAction(action);
     this->updateAction();
@@ -144,10 +144,10 @@ void CommandSwitchMainWidgetMode::updateAction()
 {
     switch (this->context()->currentPage()) {
     case IAppContext::Page::Home:
-        this->action()->setText(Command::tr("Go To Documents"));
+        this->action()->setText(Command::tr("转到项目文档"));
         break;
     case IAppContext::Page::Documents:
-        this->action()->setText(Command::tr("Go To Home Page"));
+        this->action()->setText(Command::tr("转到主页"));
         break;
     case IAppContext::Page::Unknown:
         break;
@@ -158,8 +158,8 @@ CommandPreviousDocument::CommandPreviousDocument(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("Previous Document"));
-    action->setToolTip(Command::tr("Previous Document"));
+    action->setText(Command::tr("前一个的项目文档"));
+    action->setToolTip(Command::tr("前一个的项目文档"));
     action->setIcon(mayoTheme()->icon(Theme::Icon::Back));
     action->setShortcut(Qt::ALT + Qt::Key_Left);
     this->setAction(action);
@@ -182,8 +182,8 @@ CommandNextDocument::CommandNextDocument(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("Next Document"));
-    action->setToolTip(Command::tr("Next Document"));
+    action->setText(Command::tr("后一个的项目文档"));
+    action->setToolTip(Command::tr("后一个的项目文档"));
     action->setIcon(mayoTheme()->icon(Theme::Icon::Next));
     action->setShortcut(Qt::ALT + Qt::Key_Right);
     this->setAction(action);

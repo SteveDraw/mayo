@@ -54,7 +54,7 @@ public:
         Mayo__MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Mayo__MainWindow);
         menuBar->setObjectName("menuBar");
-        menuBar->setGeometry(QRect(0, 0, 950, 22));
+        menuBar->setGeometry(QRect(0, 0, 950, 18));
         menu_File = new QMenu(menuBar);
         menu_File->setObjectName("menu_File");
         menu_Help = new QMenu(menuBar);
@@ -84,11 +84,11 @@ public:
     void retranslateUi(QMainWindow *Mayo__MainWindow)
     {
         Mayo__MainWindow->setWindowTitle(QCoreApplication::translate("Mayo::MainWindow", "Mayo", nullptr));
-        menu_File->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&File", nullptr));
-        menu_Help->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&Help", nullptr));
-        menu_Tools->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&Tools", nullptr));
-        menu_Window->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&Window", nullptr));
-        menu_Display->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&Display", nullptr));
+        menu_File->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&\346\226\207\344\273\266", nullptr));
+        menu_Help->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&\345\270\256\345\212\251", nullptr));
+        menu_Tools->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&\345\267\245\345\205\267", nullptr));
+        menu_Window->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&\347\252\227\345\217\243", nullptr));
+        menu_Display->setTitle(QCoreApplication::translate("Mayo::MainWindow", "&\346\230\276\347\244\272", nullptr));
     } // retranslateUi
 
 };

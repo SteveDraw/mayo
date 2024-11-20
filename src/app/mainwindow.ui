@@ -45,32 +45,32 @@
      <x>0</x>
      <y>0</y>
      <width>950</width>
-     <height>22</height>
+     <height>18</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
     <property name="title">
-     <string>&amp;File</string>
+     <string>&amp;文件</string>
     </property>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
-     <string>&amp;Help</string>
+     <string>&amp;帮助</string>
     </property>
    </widget>
    <widget class="QMenu" name="menu_Tools">
     <property name="title">
-     <string>&amp;Tools</string>
+     <string>&amp;工具</string>
     </property>
    </widget>
    <widget class="QMenu" name="menu_Window">
     <property name="title">
-     <string>&amp;Window</string>
+     <string>&amp;窗口</string>
     </property>
    </widget>
    <widget class="QMenu" name="menu_Display">
     <property name="title">
-     <string>&amp;Display</string>
+     <string>&amp;显示</string>
     </property>
    </widget>
    <addaction name="menu_File"/>

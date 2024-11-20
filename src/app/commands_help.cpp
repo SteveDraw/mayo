@@ -21,7 +21,7 @@ CommandReportBug::CommandReportBug(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("Report Bug"));
+    action->setText(Command::tr("点击报告错误"));
     this->setAction(action);
 }
 
@@ -34,7 +34,7 @@ CommandAbout::CommandAbout(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("About %1").arg(QCoreApplication::applicationName()));
+    action->setText(Command::tr("关于%1").arg(QCoreApplication::applicationName()));
     this->setAction(action);
 }
 

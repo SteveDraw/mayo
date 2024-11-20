@@ -53,7 +53,7 @@ public:
         label_Logo->setSizePolicy(sizePolicy);
         label_Logo->setMaximumSize(QSize(128, 128));
         label_Logo->setPixmap(QPixmap(QString::fromUtf8(":/images/appicon_64.png")));
-        label_Logo->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
+        label_Logo->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop);
 
         gridLayout_2->addWidget(label_Logo, 0, 0, 4, 1);
 
@@ -100,8 +100,8 @@ public:
 
         buttonBox = new QDialogButtonBox(Mayo__DialogAbout);
         buttonBox->setObjectName("buttonBox");
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Close);
+        buttonBox->setOrientation(Qt::Orientation::Horizontal);
+        buttonBox->setStandardButtons(QDialogButtonBox::StandardButton::Close);
 
         gridLayout_2->addWidget(buttonBox, 5, 2, 1, 1);
 

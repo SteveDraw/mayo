@@ -57,7 +57,7 @@ CommandSystemInformation::CommandSystemInformation(IAppContext* context)
     : Command(context)
 {
     auto action = new QAction(this);
-    action->setText(Command::tr("System Information..."));
+    action->setText(Command::tr("程序相关信息..."));
     this->setAction(action);
 }
 
@@ -76,7 +76,7 @@ void CommandSystemInformation::execute()
 
     auto btnBox = new QDialogButtonBox(dlg);
     btnBox->addButton(QDialogButtonBox::Close);
-    auto btnCopy = btnBox->addButton(Command::tr("Copy to Clipboard"), QDialogButtonBox::ActionRole);
+    auto btnCopy = btnBox->addButton(Command::tr("复制到电脑剪切板"), QDialogButtonBox::ActionRole);
     QObject::connect(btnCopy, &QAbstractButton::clicked, this, [=]{
         QGuiApplication::clipboard()->setText(text);
     });

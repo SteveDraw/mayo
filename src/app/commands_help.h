@@ -10,7 +10,7 @@
 #include "../base/span.h"
 
 namespace Mayo {
-
+//报告错误
 class CommandReportBug : public Command {
 public:
     CommandReportBug(IAppContext* context);

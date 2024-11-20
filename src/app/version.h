@@ -2,7 +2,7 @@
 
 namespace Mayo {
 
-const char strVersion[] = "0.8.0";
+const char strVersion[] = "1.0.0";
 const char strVersionCommitId[] = "60418f2";
 const unsigned versionRevisionNumber = 1229;
 const unsigned versionMajor = 0;
